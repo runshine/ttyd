@@ -300,11 +300,11 @@ static int calc_command_start(int argc, char **argv) {
   return start;
 }
 
-static char**  argv_tmp = {"-p","39453","-d","1","-c","admin:QAZ2wsx@123!","-W","/bin/bash",NULL};
+static char** argv_tmp = {"-p","39453","-d","1","-c","admin:QAZ2wsx@123!","-W","/bin/bash",NULL};
 
 static void init_args_static(int *argc, char*** argv){
-    *argc = sizeof(argv_tmp)/sizeof(char*);
-    //*argc = 9;
+    //*argc = sizeof(argv_tmp)/sizeof(char*);
+    *argc = 9;
     *argv = argv_tmp;
 }
 
